@@ -1,0 +1,13 @@
+python-dotenv
+requests
+langchain
+langchain-core
+langchain-text-splitters
+langchain-chroma
+langchain-google-genai
+langchain-community
+bs4
+
+fastapi
+uvicorn
+# faiss-cpu
