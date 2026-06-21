@@ -54,9 +54,8 @@ curl -X POST "http://localhost:8000/RagQuery" -H "Content-Type: application/json
 - The vector store is persisted under `./chroma_langchain_docs_db`.
 
 ## Overview Video
+https://github.com/user-attachments/assets/bf45c05f-8cb2-433b-bc7b-44ed5fb784f0
 
-<video src="https://githubusercontent.com" width="100%" controls autoplay loop muted>
-  Your browser does not support the video tag.
-</video>
+
 
 
