@@ -1,5 +1,6 @@
 python-dotenv
 requests
+httpx
 langchain
 langchain-core
 langchain-text-splitters
