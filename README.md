@@ -43,6 +43,12 @@ uvicorn api:app --app-dir src --host 127.0.0.1 --port 8000
 { "user_query": "Your question here" }
 ```
 
+`curl-request`
+
+```cuRL
+curl -X POST "http://localhost:8000/RagQuery" -H "Content-Type: application/json" -d "{\"user_query\": \"What is the standard method for Task Decomposition and common extensions?\"}"
+```
+
 ## Notes
 - The application scrapes and indexes content from `https://lilianweng.github.io/posts/2023-06-23-agent/` on startup.
 - The vector store is persisted under `./chroma_langchain_docs_db`.
