@@ -3,12 +3,13 @@ from contextlib import asynccontextmanager
 from fastapi import APIRouter, FastAPI, Request, Response, HTTPException
 from fastapi.responses import JSONResponse
 from httpx import AsyncClient
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 # Import the refactored RAG pipeline layout logic
 import rag
 
 class RagQuery(BaseModel):
+    model_config= ConfigDict(extra="forbid")
     user_query: str
 
 
