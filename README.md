@@ -52,3 +52,7 @@ curl -X POST "http://localhost:8000/RagQuery" -H "Content-Type: application/json
 ## Notes
 - The application scrapes and indexes content from `https://lilianweng.github.io/posts/2023-06-23-agent/` on startup.
 - The vector store is persisted under `./chroma_langchain_docs_db`.
+
+## Overview Video
+
+<video src="media/overview.mp4" width="100%" controls autoplay loop muted></video>

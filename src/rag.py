@@ -117,12 +117,13 @@ def get_clean_response(messages: List[BaseMessage]) -> str:
         return "No response generated."
         
     for message in reversed(messages):
+        message.pretty_print()
         if message.type == "ai":
             if isinstance(message.content, list):
                 return message.content[0].get("text", "").strip()
             elif isinstance(message.content, str):
                 return message.content.strip()
-                
+    
     return str(messages[-1].content)
 
 
